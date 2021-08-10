@@ -124,3 +124,31 @@ battlecruiser = FlyableAttackUnit('배틀크루저', 500, 25, 3)
 
 vulture.move('11시')
 battlecruiser.move('9시')
+
+# 9-8. pass
+
+
+def game_start():
+    print("[알림] 새로운 게임을 시작합니다.")
+
+
+def game_over():
+    pass  # 아무것도 안하고 일단 넘어가라
+
+
+game_start()
+game_over()
+
+# 9-9. super
+
+
+class BuildingUnit(Unit):  # 건물
+    def __init__(self, name, hp, location):
+        # Unit.__init__(self, name, hp, 0)
+        super().__init__(name, hp, 0)
+        self.location = location
+# 부모 클래스와 super()의 차이점 : __init__ 을 할 때 super() 는 self 를 사용하지 않아도 됨
+# 다중상속을 할 경우 부모 클래스에 갯수에 따라 초기화를 해줘야함
+
+
+supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
