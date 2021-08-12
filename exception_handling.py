@@ -63,6 +63,7 @@ class SoldOutError(Exception):
     def __str__(self):
         return self.msg
 
+
 chicken = 10
 waiting = 1
 while True:
