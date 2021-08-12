@@ -116,7 +116,7 @@ class FlyableAttackUnit(AttackUnit, Flyable):  # 여러가지 클래스를 상�
         print('[공중 유닛 이동]')
         self.fly(self.name, location)
 
-# 9-7. 연산자 오버라이딩  (자식클래스에서 정의한 메소드를 쓰고싶을때 메소드를 새롭게 정의해서 사용하는 것을 오버로딩이라고 함)
+# 9-7. 메소드 오버라이딩  (자식클래스에서 정의한 메소드를 쓰고싶을때 메소드를 새롭게 정의해서 사용하는 것을 오버라이딩이라고 함)
 
 
 vulture = AttackUnit('벌쳐', 80, 10, 20)
